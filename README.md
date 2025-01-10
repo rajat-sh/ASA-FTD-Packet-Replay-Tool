@@ -5,8 +5,22 @@ in lab. For this to work two interfaces on ASA e.g inside and dmz will need to b
 
 # Topology
 
-Placeholder
-
++-----------------+
+      |      ASA        |
+      |  +---------+    |
+      |  |  DMZ    |----|--\
+      |  +---------+    |   \
+      |  +---------+    |    [VLAN]
+      |  | INSIDE  |----|   /
+      |  +---------+    |  /
+      +-----------------+
+                         \
+                          \
+                           \   
+                            +------+
+                            | Linux |
+                            |  VM   |
+                            +------+
 # Requisites
 
 Linux VM with one NIC.  
